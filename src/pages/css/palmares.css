@@ -1,0 +1,38 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main-tittle{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    text-align: center;
+} 
+
+.container{
+    position: absolute;
+    top: -100px;
+    z-index: -2;
+    background-image: url("../../../assets/mainImage.jpg");
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.palmares{
+    width: 80%;
+    margin: 0 auto;
+    transform: skew(-20deg);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.palmares p{
+    transform: skew(20deg);
+    color: white;
+    font-size: 30px;
+}

@@ -1,0 +1,82 @@
+---
+import Nav from "./Nav";
+import NavBar from "../components/NavBar";
+import Palmares from "./Palmares";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <header>
+      <NavBar client:load/>
+    </header>
+    <main>
+      <Nav client:only />
+      <Palmares client:load/>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/b3133b7f77.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      import { isNavOpen } from "../navStore";
+
+      const $isNavOpen = isNavOpen;
+
+      document.getElementById("bars")?.addEventListener("click", () => {
+        $isNavOpen.set(!isNavOpen.get());
+      });
+
+      document.getElementById("instagram")?.addEventListener("click", () => {
+        window.location.replace("https://www.instagram.com/felipe_728/?next=%2F")
+      });
+
+      document.getElementById("linkedin")?.addEventListener("click", () => {
+        window.location.replace("https://www.linkedin.com/in/felipe-arredondo-giraldo-02259521b/")
+      })
+
+      document.getElementById("facebook")?.addEventListener("click", () => {
+        window.location.replace("https://www.facebook.com/FelipeArredondo728/")
+      })
+
+      document.getElementById("youtube")?.addEventListener("click", () => {
+        window.location.replace("https://www.youtube.com/channel/UCwB1RH6RSbrditV5q_MgjiA")
+      })
+
+      document.getElementById('galeria')?.addEventListener('click', () => {
+        window.location.href = 'galeria'
+    })
+
+
+    </script>
+  </body>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: transparent;
+    }
+  </style>
+</html>

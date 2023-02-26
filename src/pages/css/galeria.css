@@ -1,0 +1,19 @@
+.main-tittle{
+    color: white;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.images-container{
+    width: 80%;
+    padding: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+}

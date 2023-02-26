@@ -1,0 +1,13 @@
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    border: solid 1px red;
+}
+
+.image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
