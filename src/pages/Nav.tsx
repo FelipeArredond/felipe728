@@ -10,7 +10,7 @@ export default function Nav() {
     const home = import.meta.env.DOMAIN;
 
     return $isNavOpen ? <ul className="nav-comp">
-        <li id="inicio"><a href={"https://felipe728.vercel.app/"}>Inicio</a></li>
+        <li id="inicio"><a href={"https://felipe728-n4uao97kx-pipechiqui77-gmailcom.vercel.app/"}>Inicio</a></li>
         <li id="galeria"><a href="galeria">Galeria</a></li>
         {/* <li id="equipo"><a href="#">Equipo</a></li> */}
         <li id="palmares"><a href="palmares">Palmarés</a></li>
