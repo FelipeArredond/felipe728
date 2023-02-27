@@ -4,7 +4,9 @@ import "./css/video.css"
 export default function Video(){
     return(
         <div className="video-container">
-            <video src="../../assets/preVi2.webm" playsInline loop muted autoPlay></video>
+            <video playsInline loop muted autoPlay>
+                <source src="../../assets/preVi2.webm" type="video/webm"/>
+            </video>
         </div>
     )
 }
