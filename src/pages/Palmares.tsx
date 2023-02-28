@@ -13,8 +13,8 @@ export default function Palmares() {
       <div className="palmares">
         <p>Campeon Nacional 2017 🇨🇴</p>
         <p>Campeon Nacional 2018 🇨🇴</p>
-        <p>Campeon Lationo Americano 2019 🇨🇴</p>
-        <p>Campeon Ibero Americano 2019 🇨🇴</p>
+        <p>Campeon Lationo Americano 2019 🇲🇽</p>
+        <p>Campeon Ibero Americano 2019 🇲🇽</p>
         <p>Top 15 Campeonato Español de SBK 2020 🇪🇸</p>
       </div></>: null}
       <div className="container"></div>
