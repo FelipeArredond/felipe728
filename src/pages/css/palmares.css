@@ -3,7 +3,7 @@
 }
 
 .main-tittle{
-    color: black;
+    color: white;
     font-family: 'Bebas Neue', cursive;
     font-size: 60px;
     text-align: center;
@@ -11,13 +11,13 @@
 
 .container{
     position: absolute;
-    top: -100px;
+    top: 0px;
     z-index: -2;
     background-image: url("../../../assets/mainImage.jpg");
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

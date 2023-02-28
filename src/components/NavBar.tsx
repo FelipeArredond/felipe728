@@ -1,4 +1,5 @@
 import React from "react";
+import Bars from "./Bars";
 import "../pages/css/nav.css"
 
 export default function NavBar() {
@@ -6,7 +7,7 @@ export default function NavBar() {
     <>
       <div className="left-container">
         <div className="left-nav">
-          <i className="fa-sharp fa-solid fa-bars" id="bars"></i>
+          <Bars/>
         </div>
       </div>
       <div className="aux right">

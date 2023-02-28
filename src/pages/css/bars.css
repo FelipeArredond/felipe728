@@ -1,0 +1,33 @@
+.container-barsim{
+    height: 30px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container-barsim div{
+    width: 60px;
+    height: 5px;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.container-barsim:hover .second{
+    transform: translate(10px, 0)
+}
+
+.container-barsim .first-active{
+    width: 40px;
+    transform: skew(20deg) translate(0 , 12px) rotate(45deg);
+}
+
+.container-barsim .second-active{
+    display: none;
+}
+
+.container-barsim .third-active{
+    width: 40px;
+    transform: skew(20deg) translate(10px,-12px) rotate(-45deg);
+}

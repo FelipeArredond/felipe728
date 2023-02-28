@@ -2,7 +2,7 @@
     width: 200px;
     height: 200px;
     border-radius: 5px;
-    border: solid 1px red;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .image img{
@@ -10,4 +10,10 @@
     height: 200px;
     border-radius: 5px;
     object-fit: cover;
+    filter: grayscale(60%);
+    transition: 0.2s;
+}
+
+.image img:hover{
+    filter: grayscale(0%);
 }
